@@ -13,6 +13,14 @@
 		936E53A7264C34890001C283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936E53A5264C34890001C283 /* Main.storyboard */; };
 		936E53A9264C348C0001C283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936E53A8264C348C0001C283 /* Assets.xcassets */; };
 		936E53AC264C348C0001C283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936E53AA264C348C0001C283 /* LaunchScreen.storyboard */; };
+		936E53B7264C34BE0001C283 /* word_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 936E53B4264C34BE0001C283 /* word_blank.png */; };
+		936E53B8264C34BE0001C283 /* fin.png in Resources */ = {isa = PBXBuildFile; fileRef = 936E53B5264C34BE0001C283 /* fin.png */; };
+		936E53B9264C34BE0001C283 /* title_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 936E53B6264C34BE0001C283 /* title_logo.png */; };
+		936E53BB264C3A960001C283 /* QestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E53BA264C3A960001C283 /* QestionViewController.swift */; };
+		936E53BD264C3B020001C283 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E53BC264C3B020001C283 /* FinishViewController.swift */; };
+		936E53BF264C3B340001C283 /* ListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E53BE264C3B340001C283 /* ListTableTableViewController.swift */; };
+		936E53C1264C3B610001C283 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E53C0264C3B610001C283 /* AddViewController.swift */; };
+		936E53C5264C48E50001C283 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E53C4264C48E50001C283 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		936E53A8264C348C0001C283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		936E53AB264C348C0001C283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		936E53AD264C348C0001C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936E53B4264C34BE0001C283 /* word_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_blank.png; sourceTree = "<group>"; };
+		936E53B5264C34BE0001C283 /* fin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fin.png; sourceTree = "<group>"; };
+		936E53B6264C34BE0001C283 /* title_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_logo.png; sourceTree = "<group>"; };
+		936E53BA264C3A960001C283 /* QestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QestionViewController.swift; path = WordList/QestionViewController.swift; sourceTree = SOURCE_ROOT; };
+		936E53BC264C3B020001C283 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		936E53BE264C3B340001C283 /* ListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableTableViewController.swift; sourceTree = "<group>"; };
+		936E53C0264C3B610001C283 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		936E53C4264C48E50001C283 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +75,28 @@
 				936E539F264C34890001C283 /* AppDelegate.swift */,
 				936E53A1264C34890001C283 /* SceneDelegate.swift */,
 				936E53A3264C34890001C283 /* ViewController.swift */,
+				936E53BC264C3B020001C283 /* FinishViewController.swift */,
+				936E53BE264C3B340001C283 /* ListTableTableViewController.swift */,
+				936E53C4264C48E50001C283 /* ListTableViewCell.swift */,
+				936E53C0264C3B610001C283 /* AddViewController.swift */,
 				936E53A5264C34890001C283 /* Main.storyboard */,
 				936E53A8264C348C0001C283 /* Assets.xcassets */,
+				936E53BA264C3A960001C283 /* QestionViewController.swift */,
+				936E53B3264C34BE0001C283 /* WordList素材 */,
 				936E53AA264C348C0001C283 /* LaunchScreen.storyboard */,
 				936E53AD264C348C0001C283 /* Info.plist */,
 			);
 			path = WordList;
+			sourceTree = "<group>";
+		};
+		936E53B3264C34BE0001C283 /* WordList素材 */ = {
+			isa = PBXGroup;
+			children = (
+				936E53B4264C34BE0001C283 /* word_blank.png */,
+				936E53B5264C34BE0001C283 /* fin.png */,
+				936E53B6264C34BE0001C283 /* title_logo.png */,
+			);
+			path = "WordList素材";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +157,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936E53B7264C34BE0001C283 /* word_blank.png in Resources */,
+				936E53B9264C34BE0001C283 /* title_logo.png in Resources */,
 				936E53AC264C348C0001C283 /* LaunchScreen.storyboard in Resources */,
 				936E53A9264C348C0001C283 /* Assets.xcassets in Resources */,
+				936E53B8264C34BE0001C283 /* fin.png in Resources */,
 				936E53A7264C34890001C283 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936E53BD264C3B020001C283 /* FinishViewController.swift in Sources */,
+				936E53BB264C3A960001C283 /* QestionViewController.swift in Sources */,
+				936E53C1264C3B610001C283 /* AddViewController.swift in Sources */,
 				936E53A4264C34890001C283 /* ViewController.swift in Sources */,
+				936E53C5264C48E50001C283 /* ListTableViewCell.swift in Sources */,
 				936E53A0264C34890001C283 /* AppDelegate.swift in Sources */,
+				936E53BF264C3B340001C283 /* ListTableTableViewController.swift in Sources */,
 				936E53A2264C34890001C283 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
